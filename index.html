@@ -1,82 +1,145 @@
-<!DOCTYPE html>
+#temporary {
+  position: fixed;
+  text-align: right;
+  font-size: 12px;
+  background-color: #e7bb41;
+  color: #fff;
+  margin-left: 600px;
+  opacity: 1.00;
+  padding: 10px;
+}
 
-<html>
+/* General Styles
+Fix 1= Browser sizing changes layout */
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.3;
+}
 
-<head>
-  <link href="./austinfrench.css" rel="stylesheet" type="text/css">
-  <title>Austin French</title>
-  <link rel="preconnect" href=https://fonts.googleapis.com>
-  <link rel="preconnect" href=https://fonts.gstatic.com crossorigin>
-  <link href=https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap rel="stylesheet">
-</head>
-<!-- Body Start -->
+body {
+  background-color: #e7e5df;
+  background-image:
+}
 
-<body class="content">
-  <h1 id="austinfrench">Austin French</h1>
-  <section id="topbar">
-    <nav class="nav">
-      <ul>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#work">Work Experience</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href=https://www.linkedin.com/in/austinsfrench/ target="_blank">LinkedIn</a></li>
-      </ul>
-    </nav>
-  </section>
-  <h2 id="temporary">Hi! I'm under construction still. Thanks for stopping by!</h2>
-  <section class="quals">
-    <h2 id="education">Education</h2>
-    <p><strong>Master of Business Administration - Marketing</strong></p>
-    <a href=https://www.usi.edu/business/mba/ target="_blank" class="school">Romain College of Business</a>
+.content {
+  max-width: 550px;
+  margin: 50px 250px;
+}
 
-    <a href=https://www.usi.edu target="_blank" class="school">University of Southern Indiana</a>
-    <p><strong>Bachelor of Liberal Studies</strong></p>
-    <a href=https://college.indiana.edu target="_blank" class="school">College of Arts & Sciences</a>
-    <a href=https://www.indiana.edu target="_blank" class="school">Indiana University</a>
-  </section>
-  <section class=quals>
-    <h2 id="work">Work Experience</h2>
-    <p><strong>Designer</strong></p>
-    <p>The Home Depot - Evansville, IN</p>
-    <ul class="work">
-      <li>Manages major renovation projects from design conception to isntallation completion.</li>
-      <li>Coordinates communications between clients and a complex network of company stakeholders, including service providers, vendors, company associates, and management.</li>
-      <li>Executes design principles, both aesthetic and technical, according to NKBA industry standards.</li>
-    </ul class="work">
-    <p><strong>Communications Apprentice</strong></p>
-    <p>Actors Theatre of Louisville - Louisville, KY</p>
-    <ul>
-      <li>Post-grad program pairing young professionals from around the country with industry leaders in various fields - marketing, communications, stage design, stage management, acting, etc.</li>
-      <li>Assisted Communications Manager with PR responsibilities for main stage season, including media relations, campaign development, press releases, and project management.</li>
-      <li>Led PR and communications campaigns for an independent season of productions developed and produced entirely by program participants.</li>
-    </ul>
-    <p><strong>Starbucks Brand Operations Manager</strong></p>
-    <p>HMSHost, Indianapolis Intl. Airport - Indianapolis, IN</p>
-    <ul class="work">
-      <li>Oversaw hiring and employee development for associates, supervisors, and store managers.</li>
-      <li>Responsible for implementing all brand standards, including training programs, inventory management, and company finances.</li>
-      <li>Worked with peers in district airports (Louisville/Cincinnati) to convey best practices and present operating improvements to regional HMSHost and Starbucks management teams.</li>
-    </ul>
-  </section>
-  <section class="quals">
-    <h2 id="portfolio">Portfolio</h2>
-  </section>
-  <section class="quals">
-    <h2 id="skills">Skills</h2>
-    <ul class='skillz1'>
-      <li>HTML/CSS/JavaScript</li>
-      <li>Strategic Communications</li>
-      <li>Brand Management</li>
-      <li>Training & Development</li>
-    </ul>
-    <ul class="skillz2">
-      <li>Product Positioning</li>
-      <li>Collaboration</li>
-      <li>Problem Solving</li>
-      <li>Project Management</li>
-    </ul>
-  </section>
-</body>
+section.quals {
+  background-color: #f0efeb;
+  padding: 20px 20px;
+  margin: 25px 0px;
+  border: 4px double #393e41;
+  border-radius: 10px;
+}
 
-</html>
+.work {
+  margin: 2px;
+}
+
+h1 {
+  text-align: center;
+  padding: 25px 0;
+  background-color: #44bba4;
+  border: 8px double #393e41;
+  border-radius: 4px;
+  opacity: 0.95;
+  width: 800px;
+  height: 125px;
+  color: #FFF;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.quals a {
+  color: #102542;
+}
+
+.school {
+  display: inline-block;
+}
+
+p {
+  color: #102542;
+}
+
+nav {
+  display: inline-block;
+  margin: 0;
+  width: 800px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 8px;
+  display: inline-block;
+  width: 800px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 15px 30px;
+  opacity: .95;
+  border: 4px outset #e7e5df;
+  background-color: #e7bb41;
+  border-radius: 2px;
+  padding: 8px;
+  vertical-align: top;
+}
+
+nav ul li:hover {
+  display: inline-block;
+  list-style-type: none;
+  margin: 15px 30px;
+  opacity: .95;
+  border: 4px outset #393e41;
+  background-color: #ff6b6b;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.quals {
+  overflow: hidden;
+}
+
+li a {
+  color: #ffffff;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  width: 500px;
+}
+
+#topbar {
+  margin: 0;
+}
+}
+
+.skillz1 li {
+  color: #102542;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.skillz2 li {
+  color: #102542;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-align: justify;
+}
+
+.glass {}
+
